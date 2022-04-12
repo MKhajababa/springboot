@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org" th:replace = "base1::layout(~{::section})">
+<head>
+<title th:text = "${title}">ContactManager</title >
+</head>
+<body>
+	<section>
+	
+		<div class="container">
+		<div class="row">
+		<div class="col-md-12">
+		<div class="card">
+		<div class="card-body">
+		<h2 class="mt-3">Change Password</h2 >
+		
+		<form th:action="@{/user/password-change}" method="post">
+		<div class="form-group">
+			<input type="text" name="oldpassword" class="form-control mt-3" placeholder="enter the old password"/>
+		</div >
+		<div class="form-group">
+			<input type="text" name="newpassword" class="form-control mt-3" placeholder="enter the new password"/>
+		</div >
+		<div class="form-group text-center mt-3">
+			<button type="submit" class="btn btn-primary">change</button >
+			<button type="reset" class="btn btn-warning">Reset</button >
+		</div >
+		
+		</form  >
+		</div >
+		</div >
+		</div >
+		</div >
+		</div >
+	
+	
+	
+	</section>
+</body>
+</html >

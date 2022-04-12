@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th = "http://www.thymeleaf.org" th:replace = "base1::layout(~{::section})">
+<head>
+<title th:text = "${title}">ContactManager</title >
+</head>
+<body>
+	<section>
+		<div class="container bootstrap snippets bootdey">
+<div class="row">
+    <!-- BEGIN USER PROFILE -->
+    <div class="col-md-12">
+      <div class="grid profile">
+        <div class="grid-header text-center">
+          <div class="col-xs-2">
+            <img th:src="@{'/img/'+ ${user.imageUrl}}" class="img-circle" alt="">
+          </div>
+          <div class="col-xs-7">
+            <h3 th:text="${user.name}"></h3 >
+            <p th:text="${'@user'+user.id}"></p >
+            
+          </div>
+          
+        </div>
+        <div class="grid-body text-center" style="background-color: rgb(224, 236, 254);">
+         
+          <div class="tab-content text-center" style="background-color: rgb(224, 236, 254);">
+            <!-- BEGIN PROFILE -->
+            <div class="tab-pane active"  id="profile">
+              <p class="lead">My Profile</p>
+              <hr>
+              <div class="row ">
+                <div class="container text-center">
+                  <p><strong>Email:</strong> <span th:text="${user.email}"></span ></p>
+                  <p><strong>Role:</strong> <span th:text="${user.role}"></span ></p>
+                  <p><strong>Active:</strong> <span th:text="${user.enabled}"></span ></p>
+                  
+                  <p><strong>About:</strong> <span th:text="${user.about}"></span ></p>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+            <!-- END PROFILE -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END USER PROFILE -->
+  </div>
+</div>
+			
+
+	
+	</section>
+</body>
+</html >

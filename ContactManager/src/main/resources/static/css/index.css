@@ -1,0 +1,461 @@
+body{
+	background-color: rgb(224, 236, 254)!important;
+}
+.new {
+	
+	height:800px;
+}
+.new2{
+	height:fit-content;
+}
+.divider:after,
+.divider:before {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #eee;
+}
+.h-custom {
+  height: calc(100% - 73px);
+}
+/*
+@media (max-width: 450px) {
+  .h-custom {
+    height: 100%;
+  }
+}*/
+
+.paddingTB60 {padding:60px 0px 60px 0px;}
+.gray-bg {background: #F1F1F1 !important;}
+.about-title h1 {color: #535353; font-size:45px;font-weight:600;}
+.about-title span {color: #AF0808; font-size:45px;font-weight:700;}
+.about-title h3 {color: #535353; font-size:23px;margin-bottom:24px;}
+.about-title p {color: #7a7a7a;line-height: 1.8;margin: 0 0 15px;}
+.about-paddingB {padding-bottom: 12px;}
+.about-img {padding-left: 57px;}
+
+/* Social Icons */
+.about-icons {margin:48px 0px 48px 0px ;}
+.about-icons i{margin-right: 10px;padding: 0px; font-size:35px;color:#323232;box-shadow: 0 0 3px rgba(0, 0, 0, .2);}
+.about-icons li {margin:0px;padding:0;display:inline-block;}
+#social-fb:hover {color: #3B5998;transition:all .001s;}
+ #social-tw:hover {color: #4099FF;transition:all .001s;}
+ #social-gp:hover {color: #d34836;transition:all .001s;}
+ #social-em:hover {color: #f39c12;transition:all .001s;}
+
+ 
+ /* Side Bar */
+ 
+ /**@media only screen and (max-width:600px){
+	.sidebar {
+		display: none;
+		width: 80% !important;
+		background:rgb(224, 236, 254);
+		height:100vh;
+		position: fixed;
+		padding-top: 20px;
+		
+	}
+	.content{
+		margin-left: 0% !important;
+	}
+}
+ .sidebar{
+	width :15%;
+	background:rgb(224, 236, 254);
+	height:100%;
+	position: fixed;
+	padding-top: 45px;
+}
+
+.sidebar a{
+	display:block;
+	width: 100%;
+	padding: 10px 25px;
+	text-decoration: none;
+	color:darkgray;
+	
+}
+.sidebar a:hover{
+	background: #e2e2e2;
+}
+.siderbar .divider{
+	height: .5px;
+	width:100%;
+	background: #e2e2e2;
+	margin-top: 10px;
+}
+.content{
+	margin-left: 15%;
+}
+
+.sidebar .crossbtn{
+	position: absolute;
+	top:0px;
+	right:35px;
+	font-size:40px;
+	cursor:pointer;
+}
+**/
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 998; /* Stay on top */
+  top: 0;
+  left: 0;
+  margin-top: 60px;
+  background-color:rgb(224, 236, 254); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+}
+
+/* The sidebar links */
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: dodgerblue;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color:rgb(224, 236, 254);
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+  .h-custom {
+    height: 100%;
+  }
+}
+
+.form-container{
+	background:rgb(224, 236, 254) ;
+}
+
+.img_deco{
+	width: 40px;
+	height: 40px;
+	object-fit: cover;
+	border-radius: 50%;
+		
+}
+.img-circle{
+	width: 120px;
+	height: 120px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.anchor{
+	font-size: 15px;
+	color:black;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+
+/* Profile Page*/
+
+
+
+.profile .grid-header {
+    background: url('https://bootdey.com/img/Content/bg1.jpg') no-repeat center center;
+	background-size: cover;
+	color: #f5f5f5;
+}
+
+.profile img {
+	max-width: 100%;
+}
+
+.profile .grid-header img {
+	margin: 2em 1em;
+}
+
+.profile .grid-header h3 {
+	color: #f5f5f5 !important;
+	font-weight: 400;
+	margin: 30px 0 20px 0;
+}
+
+.profile .grid-header p {
+	margin-bottom: 5px;
+}
+
+.profile .grid-header p a {
+	color: #f5f5f5;
+}
+
+.profile .grid-body {
+	font-size: 1em;
+}
+
+.profile .tab-content {
+	padding-bottom: 0px;
+}
+
+.profile .stats {
+	margin-top: 20px;
+	padding: 0px 0px 20px;
+	background: #eee;
+	text-align: center;
+	border-top: 1px solid #ccc;
+}
+
+.profile .stats h1 {
+	font-weight: 400;
+	margin-bottom: 0px;
+}
+
+.profile .stats span {
+	margin: 5px 0 10px 0;
+	display: block;
+}
+
+.profile .stats .btn {
+	padding-right: 4em;
+	padding-left: 4em;
+}
+
+.profile .timeline-centered {
+	font-size: 1.15em;
+}
+
+.profile .timeline-centered:before {
+	background: #eee;
+}
+
+.profile .bg-default {
+	border: 1px solid #bbb;
+}
+
+
+.grid {
+    position: relative;
+	width: 100%;
+	background: #fff;
+	color: #666666;
+	border-radius: 2px;
+	margin-bottom: 25px;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid .grid-header {
+	position: relative;
+	border-bottom: 1px solid #ddd;
+	padding: 15px 10px 10px 20px;
+}
+
+.grid .grid-header:before,
+.grid .grid-header:after {
+	display: table;
+	content: " ";
+}
+
+.grid .grid-header:after {
+	clear: both;
+}
+
+.grid .grid-header span,
+.grid .grid-header > .fa {
+	display: inline-block;
+	margin: 0;
+	font-weight: 300;
+	font-size: 1.5em;
+	float: left;
+}
+
+.grid .grid-header span {
+	padding: 0 5px;
+}
+
+.grid .grid-header > .fa {
+	padding: 5px 10px 0 0;
+}
+
+.grid .grid-header > .grid-tools {
+	padding: 4px 10px;
+}
+
+.grid .grid-header > .grid-tools a {
+	color: #999999;
+	padding-left: 10px;
+	cursor: pointer;
+}
+
+.grid .grid-header > .grid-tools a:hover {
+	color: #666666;
+}
+
+.grid .grid-body {
+	padding: 15px 20px 15px 20px;
+	font-size: 0.9em;
+	line-height: 1.9em;
+}
+
+.grid .full {
+	padding: 0 !important;
+}
+
+.grid .transparent {
+	box-shadow: none !important;
+	margin: 0px !important;
+	border-radius: 0px !important;
+}
+
+.grid.top.black > .grid-header {
+	border-top-color: #000000 !important;
+}
+
+.grid.bottom.black > .grid-body {
+	border-bottom-color: #000000 !important;
+}
+
+.grid.top.blue > .grid-header {
+	border-top-color: #007be9 !important;
+}
+
+.grid.bottom.blue > .grid-body {
+	border-bottom-color: #007be9 !important;
+}
+
+.grid.top.green > .grid-header {
+	border-top-color: #00c273 !important;
+}
+
+.grid.bottom.green > .grid-body {
+	border-bottom-color: #00c273 !important;
+}
+
+.grid.top.purple > .grid-header {
+	border-top-color: #a700d3 !important;
+}
+
+.grid.bottom.purple > .grid-body {
+	border-bottom-color: #a700d3 !important;
+}
+
+.grid.top.red > .grid-header {
+	border-top-color: #dc1200 !important;
+}
+
+.grid.bottom.red > .grid-body {
+	border-bottom-color: #dc1200 !important;
+}
+
+.grid.top.orange > .grid-header {
+	border-top-color: #f46100 !important;
+}
+
+.grid.bottom.orange > .grid-body {
+	border-bottom-color: #f46100 !important;
+}
+
+.grid.no-border > .grid-header {
+	border-bottom: 0px !important;
+}
+
+.grid.top > .grid-header {
+	border-top-width: 4px !important;
+	border-top-style: solid !important;
+}
+
+.grid.bottom > .grid-body {
+	border-bottom-width: 4px !important;
+	border-bottom-style: solid !important;
+}
+.tab-pane{
+	background:rgb(224, 236, 254) ;
+}
+
+/*Search Bar*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+
+.height {
+    height: 10vh
+}
+
+.search {
+    position: relative;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+}
+
+.search input {
+    height: 60px;
+    text-indent: 25px;
+    border: 2px solid #d6d4d4
+}
+
+.search input:focus {
+    box-shadow: none;
+    border: 2px solid blue
+}
+
+.search .fa-search {
+    position: absolute;
+    top: 20px;
+    left: 16px
+}
+
+.search button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 50px;
+    width: 110px;
+    background: blue
+}
+
+.search-result {
+	position:absolute;
+	width: 45.5%;
+	padding: 10px;
+	background-color: white;
+	border: 1px solid grey;
+	display: none;
+}
+
+.proact{
+	
+	background: dodgerblue !important;
+	color: white !important;
+}
